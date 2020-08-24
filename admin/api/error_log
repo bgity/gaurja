@@ -1,0 +1,53 @@
+[10-Oct-2019 07:18:10 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[10-Oct-2019 07:18:52 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[10-Oct-2019 07:26:05 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:35:56 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:43:30 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:45:56 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:46:45 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:47:59 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:50:28 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 07:59:38 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Oct-2019 08:00:38 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[16-Oct-2019 08:18:19 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[17-Oct-2019 10:19:43 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[17-Oct-2019 10:19:43 UTC] PHP Warning:  include(../include/config.php): failed to open stream: No such file or directory in /home/vishwaman/public_html/admin/api/health_tips.php on line 2
+[17-Oct-2019 10:19:43 UTC] PHP Warning:  include(../include/config.php): failed to open stream: No such file or directory in /home/vishwaman/public_html/admin/api/health_tips.php on line 2
+[17-Oct-2019 10:19:43 UTC] PHP Warning:  include(): Failed opening '../include/config.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/vishwaman/public_html/admin/api/health_tips.php on line 2
+[17-Oct-2019 15:49:43 Asia/Kolkata] PHP Fatal error:  Call to a member function query() on null in /home/vishwaman/public_html/admin/api/health_tips.php on line 9
+[17-Oct-2019 10:19:52 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[17-Oct-2019 10:19:52 UTC] PHP Warning:  include(../include/config.php): failed to open stream: No such file or directory in /home/vishwaman/public_html/admin/api/health_tips.php on line 2
+[17-Oct-2019 10:19:52 UTC] PHP Warning:  include(../include/config.php): failed to open stream: No such file or directory in /home/vishwaman/public_html/admin/api/health_tips.php on line 2
+[17-Oct-2019 10:19:52 UTC] PHP Warning:  include(): Failed opening '../include/config.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/vishwaman/public_html/admin/api/health_tips.php on line 2
+[17-Oct-2019 15:49:52 Asia/Kolkata] PHP Fatal error:  Call to a member function query() on null in /home/vishwaman/public_html/admin/api/health_tips.php on line 9
+[17-Oct-2019 10:20:23 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[17-Oct-2019 10:58:48 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[17-Oct-2019 16:28:48 Asia/Kolkata] PHP Fatal error:  Call to a member function fetchAll() on boolean in /home/vishwaman/public_html/admin/api/youtube_video_list.php on line 15
+[23-Oct-2019 12:00:14 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Nov-2019 08:06:14 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Nov-2019 08:06:57 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[12-Nov-2019 08:15:08 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[15-Feb-2020 07:16:49 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php:8
+Stack trace:
+#0 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php(8): PDO->__construct('mysql:host=loca...', 'vishwaman_ngal', 'Q*SG9+gRTRyO')
+#1 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/slider_images.php(2): include('/home/vishwaman...')
+#2 {main}
+  thrown in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php on line 8
+[15-Feb-2020 07:20:05 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php:8
+Stack trace:
+#0 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php(8): PDO->__construct('mysql:host=loca...', 'vishwaman_ngal', 'Q*SG9+gRTRyO')
+#1 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/slider_images.php(2): include('/home/vishwaman...')
+#2 {main}
+  thrown in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php on line 8
+[15-Feb-2020 07:20:10 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php:8
+Stack trace:
+#0 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php(8): PDO->__construct('mysql:host=loca...', 'vishwaman_ngal', 'Q*SG9+gRTRyO')
+#1 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/youtube_video_list.php(2): include('/home/vishwaman...')
+#2 {main}
+  thrown in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php on line 8
+[15-Feb-2020 07:20:23 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php:8
+Stack trace:
+#0 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php(8): PDO->__construct('mysql:host=loca...', 'vishwaman_ngal', 'Q*SG9+gRTRyO')
+#1 /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/youtube_video_list.php(2): include('/home/vishwaman...')
+#2 {main}
+  thrown in /home/vishwaman/domains/vishwamangalayurveda.com/public_html/admin/api/config.php on line 8
