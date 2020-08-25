@@ -6192,7 +6192,7 @@ img {
 
 .testamonial-description {
   margin: 4.071rem auto 6rem;
-  max-width: 700px;
+  max-width: 825px;
   color: #585454;
   font-weight: 300;
   text-align: center !important;
@@ -6202,3 +6202,12 @@ img {
   margin-top: 32px;
   margin-bottom: 47px;
 }
+
+.circletag {
+  box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  max-width: 250px !important;
+  border-radius: 0%;
+  margin-top: -61px;
+  margin-bottom: 10px;
+

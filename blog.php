@@ -32,7 +32,7 @@ include "include/config.php";
         foreach ($users4 as $row4) { ?>
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="card-div thumbnail">
-                <a href="blog_details.php?id=<?php echo $row4['id']; ?>" target="_blank">
+                <a href="blog_details.php?id=<?php echo $row4['id']; ?>">
                     <img src="<?php echo $row4['blog_image']; ?>" alt="Nature" style="width:300px;height: 200px;">
                     <p></p>
                     <h4 class="thumbnail-text"><?php echo $row4['blog_title']; ?></h4>

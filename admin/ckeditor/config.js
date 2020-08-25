@@ -29,10 +29,15 @@ CKEDITOR.editorConfig = function( config ) {
 	// Remove some buttons provided by the standard plugins, which are
 	// not needed in the Standard(s) toolbar.
 	config.removeButtons = 'Underline,Subscript,Superscript';
+	config.allowedContent = true;
 
 	// Set the most common block elements.
-	config.format_tags = 'p;h1;h2;h3;pre';
+	//config.format_tags = 'p;h1;h2;h3;pre';
 
-	// Simplify the dialog windows.
-	config.removeDialogTabs = 'image:advanced;link:advanced';
+		// Simplify the dialog windows.
+		config.removeDialogTabs = 'image:advanced;link:advanced';
+	  //   config.enterMode = 2; //disabled <p> completely
+        config.enterMode = CKEDITOR.ENTER_BR; // pressing the ENTER KEY input <br/>
+        config.shiftEnterMode = CKEDITOR.ENTER_P; //pressing the SHIFT + ENTER KEYS input <p>
+        config.autoParagraph = false; // stops automatic insertion of <p> on focus
 };

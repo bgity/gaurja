@@ -39,7 +39,7 @@ include "include/config.php";
         foreach ($users4 as $row4) { ?>
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="card-div thumbnail">
-                <a href="testimonials_details.php?id=<?php echo $row4['id']; ?>" target="_blank">
+                <a href="testimonials_details.php?id=<?php echo $row4['id']; ?>">
                     <img src="admin/<?php echo $row4['testimonials_image']; ?>" alt="Nature"
                         style="width:350px;height: 255px;">
                     <h4 class="thumbnail-text"><?php echo $row4['name']; ?></h4>
