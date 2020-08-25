@@ -27,8 +27,10 @@ include "include/config.php";
 
 <div class="container-fluid">
     <div class="sec-title">
+        <h2 style="font-size:24px;text-align:center">We are providing Chemical free Gau Urja & agriculture products
+            obtained from Gau mata’s grazing medicinal grasses, plants, herbs in open grazing land.</h2>
     </div>
-    <h2 class="vision">Testimonials</h2>
+    <!--  <h2 class="vision">Testimonials</h2> -->
     <div class="row">
         <?php
         $sql4 = "select * from tbl_testimonials order by id asc ";

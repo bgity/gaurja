@@ -282,7 +282,7 @@ $users = $stmt1->fetchAll();
                         <div class="card-div thumbnail">
                             <a href="blog.php">
                                 <img src="<?php echo $row3['blog_image']; ?>" alt="Nature"
-                                    style="width:350px;height: 255px;">
+                                    style="width:300px;height: 200px;">
                                 <h4 class="thumbnail-text"><?php echo $row3['blog_content']; ?></h4>
                                 <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
                             </a>
