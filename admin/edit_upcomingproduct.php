@@ -21,12 +21,10 @@ if (isset($_POST['submit'])) {
         $save_image = 'upcomingproduct/images/';
         $up_image = $save_image . $up_image_name;
 
-        $result7 = "UPDATE upcoming_product SET upcoming_product_name='$title',upcoming_product_details='$desc',product_image='$content',testimonials_image ='$up_image' WHERE id='$id' ";
+        $result7 = "UPDATE upcoming_product SET upcoming_product_name='$title',upcoming_product_details='$desc',product_image='$up_image' WHERE id='$id' ";
         $stmt7 = $conn->query($result7);
 
         if ($stmt7) {
-
-
             echo '<script language="javascript" type="text/javascript"> 
               alert("upcoming product details updated successfully");
              window.location = "upcomingproduct_list.php";
