@@ -34,7 +34,7 @@ include "include/config.php";
             <div class="card-main-div col-md-12 col-sm-12 col-xs-12">
                 <div class="card-div thumbnail">
                     <img src="<?php echo $row4['blog_image']; ?>" alt="Nature" class="img-raised">
-                    <h1 class=" testamonial-text"><?php echo $row4['blog_title']; ?></h1>
+                    <h1 class="testamonial-text"><?php echo $row4['blog_title']; ?></h1>
                     <p class="testamonial-description"><?php echo $row4['blog_content']; ?></p>
                 </div>
             </div>

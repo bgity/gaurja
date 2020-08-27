@@ -7,7 +7,6 @@ include "include/config.php";
 <section class="page-title" style="background-image:url(images/background/page-title-1.jpg);">
     <div class="auto-container">
         <h1>Products</h1>
-
         <!--Bread Crumb -->
         <div class="breadcrumb-column">
             <ul class="bread-crumb clearfix">
@@ -15,11 +14,10 @@ include "include/config.php";
                 <li class="active">Products</li>
             </ul>
         </div>
-
     </div>
 </section>
-<section>
-    <div class="container-fluid" style="background-color: #f7f6f3;">
+<section class="service-style-3">
+    <div class="auto-container">
         <div class="sec-title">
             <h2 style="font-size:24px;text-align:center">We are providing Chemical free Gau Urja & agriculture
                 products
@@ -33,7 +31,7 @@ include "include/config.php";
             $users4 = $stmt4->fetchAll();
             foreach ($users4 as $row4) { ?>
             <div class="card-main-div col-md-12 col-sm-12 col-xs-12">
-                <div class="card-div thumbnail">
+                <div class="box-shadow-custom thumbnail">
                     <img src="admin/<?php echo $row4['product_image']; ?>" alt="Nature" class="circletag">
                     <h1 class="testamonial-text"><?php echo $row4['product_name']; ?></h1>
                     <p class="testamonial-description"><?php echo $row4['product_details']; ?></p>

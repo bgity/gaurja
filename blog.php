@@ -16,7 +16,6 @@ include "include/config.php";
         </div>
     </div>
 </section>
-
 <div class="container-fluid">
     <div class="sec-title">
         <h2 style="font-size:24px;text-align:center">We are providing Chemical free Gau Urja & agriculture products

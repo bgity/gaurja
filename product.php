@@ -18,32 +18,33 @@ include "include/config.php";
 
     </div>
 </section>
-
-<div class="container-fluid">
-    <div class="sec-title">
-        <h2 style="font-size:24px;text-align:center">We are providing Chemical free Gau Urja & agriculture products
-            obtained from Gau mata’s grazing medicinal grasses, plants, herbs in open grazing land.</h2>
-    </div>
-    <!--  <h2 class="vision">Testimonials</h2> -->
-    <div class="row">
-        <?php
-        $sql4 = "select * from products order by id asc ";
-        $stmt4 = $conn->query($sql4);
-        $users4 = $stmt4->fetchAll();
-        foreach ($users4 as $row4) { ?>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="card-div thumbnail">
-                <a href="product_details.php?id=<?php echo $row4['id']; ?>">
-                    <img src="admin/<?php echo $row4['product_image']; ?>" alt="Nature"
-                        style="width:350px;height: 255px;">
-                    <h4 class="thumbnail-text"><?php echo $row4['product_name']; ?></h4>
-                    <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
-                </a>
-            </div>
+<section class="service-style-3">
+    <div class="auto-container">
+        <div class="sec-title">
+            <h2 style="font-size:24px;text-align:center">We are providing Chemical free Gau Urja & agriculture products
+                obtained from Gau mata’s grazing medicinal grasses, plants, herbs in open grazing land.</h2>
         </div>
-        <?php } ?>
+        <!--  <h2 class="vision">Testimonials</h2> -->
+        <div class="row">
+            <?php
+            $sql4 = "select * from products order by id asc ";
+            $stmt4 = $conn->query($sql4);
+            $users4 = $stmt4->fetchAll();
+            foreach ($users4 as $row4) { ?>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box-shadow-custom thumbnail">
+                    <a href="product_details.php?id=<?php echo $row4['id']; ?>">
+                        <img src="admin/<?php echo $row4['product_image']; ?>" alt="Nature"
+                            style="width:350px;height: 255px;">
+                        <h4 class="thumbnail-text"><?php echo $row4['product_name']; ?></h4>
+                        <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
+                    </a>
+                </div>
+            </div>
+            <?php } ?>
+        </div>
     </div>
-</div>
+</section>
 
 
 <?php include "footer.php"; ?>
