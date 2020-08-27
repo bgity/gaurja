@@ -293,7 +293,7 @@
     });
   }
   $('#customers-testimonials').owlCarousel({
-    items: 3,
+    items: 4,
     loop: true,
     margin: 10,
     autoplay: true,

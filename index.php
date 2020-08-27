@@ -32,9 +32,8 @@ $users = $stmt1->fetchAll();
         </div>
     </div>
 </section>
-
-<div class="wrapper">
-    <div class="container-fluid">
+<section class="intro-style-one">
+    <div class="auto-container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="sec-title">
@@ -42,84 +41,27 @@ $users = $stmt1->fetchAll();
                 </div>
                 <div id="customers-testimonials" class="owl-carousel">
                     <!--TESTIMONIAL 1 -->
-                    <div class="item">
+                    <?php
+                    $sql2 = "select * from upcoming_product order by id asc";
+                    $stmt2 = $conn->query($sql2);
+                    $users2 = $stmt2->fetchAll();
+                    foreach ($users2 as $row2) { ?>
+                    <div class="item thumbnail">
                         <div class="shadow-effect">
-                            <img class="img-responsive"
-                                src="https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg"
-                                alt="">
+                            <img class="img-responsive" src="admin/<?php echo $row2['product_image']; ?>" alt="">
                             <div class="item-details">
-                                <h3 class="thumbnail-text">Gaumutra</h3>
-                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
-                                </p>
+                                <h3 class="thumbnail-text"><?php echo $row2['upcoming_product_name']; ?></h3>
                                 <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
                             </div>
                         </div>
                     </div>
-                    <!--END OF TESTIMONIAL 1 -->
-                    <!--TESTIMONIAL 2 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-responsive"
-                                src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg"
-                                alt="">
-                            <div class="item-details">
-                                <h3 class="thumbnail-text">Gaumutra</h3>
-                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
-                                </p>
-                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 2 -->
-                    <!--TESTIMONIAL 3 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-responsive"
-                                src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg"
-                                alt="">
-                            <div class="item-details">
-                                <h3 class="thumbnail-text">Gaumutra</h3>
-                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
-                                </p>
-                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 3 -->
-                    <!--TESTIMONIAL 4 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-responsive"
-                                src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg" alt="">
-                            <div class="item-details">
-                                <h3 class="thumbnail-text">Gaumutra</h3>
-                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
-                                </p>
-                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 4 -->
-                    <!--TESTIMONIAL 5 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-responsive"
-                                src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg"
-                                alt="">
-                            <div class="item-details">
-                                <h3 class="thumbnail-text">Gaumutra</h3>
-                                <p class="thumbnail-text">We with Gau urja doing research on non-curable
-                                </p>
-                                <button class="btn btn-primary btn-block custom-button"><span>Read More</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 5 -->
+                    <?php } ?>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
+</section>
 <!--Intro Style One-->
 <section class="intro-style-one">
     <div class="auto-container">
